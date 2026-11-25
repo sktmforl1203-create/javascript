@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <img id="image" src="book1.jpg" width="120" height = "100">
+        <script>
+            var imgsrc=1;
+            function changeImage() {
+                if(imgsrc ==2) {
+                    document.getElementById("image").src = "book1.jpg"
+                    imgsrc=1;
+                }else{
+                    document.getElementById("image").src="book2.jpg";
+                    imgsrc=2;
+                }
+            }
+        </script>
+        <input type=""button" onclick="changeImage()" value="click"/>
+    </body>
+</html> 

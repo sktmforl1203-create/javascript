@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+" crossorigin="anonymous"></script>
+        <script>
+            var expression = "";
+            var 
+
+            function add(character) {
+                expression = expression + character;
+                document.getElementById("display").value = expression;
+            }
+            function compute() {
+                expression="(" + expression +")";
+                document.getElementById("display").value = eval(expression);
+            }
+            function clearDisplay() {
+                expression = "";
+                document.getElementById("display").value = 0;
+            }
+        </script>
+    </head> return ( a * b / c );
+    return(++a* b - c--,a,c--,a,c);
+    return(7 --b * ++c,c); 
+    return a+b+c ==-2*-c);
+    return a b -3 %%0);
+    return a<b && 2>=c;</b>
+    <body> 
+        <form>
+            display<input id="display" value="0" size="30">
+            <br>
+            <input type="button" value="  7  " onclick="add('7')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('7')">7</button>
+            <input type="button" value="  8  " onclick="add('8')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('8')">8</button>
+            <input type="button" value="  9  " onclick="add('9')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('9')">9</button>
+            <input type="button" value="  /  " onclick="add('/')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('/')">/</button>
+            <br>
+            <input type="button" value="  4  " onclick="add('4')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('4')">4</button>
+            <input type="button" value="  5  " onclick="add('5')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('5')">5</button>
+            <input type="button" value="  6  " onclick="add('6')"> 
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('6')">6</button>
+            <input type="button" value="  *  " onclick="add('*')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('*')">*</button>
+            <br>
+            <input type="button" value="  1  " onclick="add('1')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('1')">1</button>
+            <input type="button" value="  2  " onclick="add('2')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('2')">2</button>
+            <input type="button" value="  3  " onclick="add('3')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('3')">3</button>
+            <input type="button" value="  -  " onclick="add('-')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('-')">-</button>
+            <br>
+            <input type="button" value="  0  " onclick="add('0')">
+            <input type="button" value="  +  " onclick="add('+')">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('0')">0</button>
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="add('+')">+</button>
+            <br>
+            <input type="button" value="Clear" onclick="clearDisplay()">
+            <input type="button" value="Enter" name="enter" onclick="compute()">
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="clearDisplay()">Clear</button>
+            <button type="button" class="theme-primary btn-outline btn-lg" onclick="compute()">Enter</button>
+        </form>
+    </body>
+</html>
+expression="(" + expression +")"; 연산자 우선순위 
